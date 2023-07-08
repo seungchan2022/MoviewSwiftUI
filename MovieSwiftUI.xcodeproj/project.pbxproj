@@ -29,13 +29,24 @@
 		EC1658922A56953B008CEF62 /* AppNowPlayingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1658912A56953B008CEF62 /* AppNowPlayingPage.swift */; };
 		EC1658942A569952008CEF62 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1658932A569952008CEF62 /* HomePage.swift */; };
 		EC1658962A569B12008CEF62 /* AppDiscoverPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1658952A569B12008CEF62 /* AppDiscoverPage.swift */; };
-		EC1658982A569B33008CEF62 /* AppFanClubPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1658972A569B33008CEF62 /* AppFanClubPage.swift */; };
 		EC16589A2A569B41008CEF62 /* AppMyListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1658992A569B41008CEF62 /* AppMyListPage.swift */; };
-		EC1974F12A592B2500371CC6 /* ReviesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1974F02A592B2500371CC6 /* ReviesPage.swift */; };
+		EC1974F12A592B2500371CC6 /* ReviewsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1974F02A592B2500371CC6 /* ReviewsPage.swift */; };
+		EC34BC402A5968DC0099572E /* AppUpComingDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC34BC3F2A5968DC0099572E /* AppUpComingDetailPage.swift */; };
+		EC34BC442A5979F90099572E /* AppTrendingDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC34BC432A5979F90099572E /* AppTrendingDetailPage.swift */; };
+		EC34BC482A597BE70099572E /* AppTopRatePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC34BC472A597BE70099572E /* AppTopRatePage.swift */; };
+		EC34BC4B2A597C490099572E /* AppPopularDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC34BC4A2A597C490099572E /* AppPopularDetailPage.swift */; };
+		EC34BC4F2A597DAD0099572E /* AppTopRateDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC34BC4E2A597DAD0099572E /* AppTopRateDetailPage.swift */; };
+		EC34BC522A597F210099572E /* AppGenresDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC34BC512A597F210099572E /* AppGenresDetailPage.swift */; };
+		EC34BC552A5984610099572E /* AppGenresListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC34BC542A5984610099572E /* AppGenresListPage.swift */; };
+		EC34BC582A59AB210099572E /* AppFanClubPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC34BC572A59AB210099572E /* AppFanClubPage.swift */; };
+		EC34BC5B2A59AB3A0099572E /* AppFanClubDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC34BC5A2A59AB3A0099572E /* AppFanClubDetailPage.swift */; };
+		EC34BC5D2A59B5070099572E /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC34BC5C2A59B5070099572E /* Test.swift */; };
+		EC5ADAEA2A5955F100FBC43B /* CastPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5ADAE92A5955F100FBC43B /* CastPage.swift */; };
+		EC5ADAEE2A59590C00FBC43B /* ReviewsDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5ADAED2A59590C00FBC43B /* ReviewsDetailPage.swift */; };
+		EC5ADAF12A595A6600FBC43B /* CastDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5ADAF02A595A6600FBC43B /* CastDetailPage.swift */; };
 		EC9CD9A42A57CC67007F46F1 /* AppMoviePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CD9A32A57CC67007F46F1 /* AppMoviePage.swift */; };
 		EC9CD9A62A57CEB7007F46F1 /* AppUpComingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CD9A52A57CEB7007F46F1 /* AppUpComingPage.swift */; };
 		EC9CD9A82A57CEC4007F46F1 /* AppPopularPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CD9A72A57CEC4007F46F1 /* AppPopularPage.swift */; };
-		EC9CD9AA2A57CED0007F46F1 /* AppTopRatePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CD9A92A57CED0007F46F1 /* AppTopRatePage.swift */; };
 		EC9CD9AC2A57CEE6007F46F1 /* AppGenresPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CD9AB2A57CEE6007F46F1 /* AppGenresPage.swift */; };
 		EC9CD9AE2A57CFE1007F46F1 /* AppTrendingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CD9AD2A57CFE1007F46F1 /* AppTrendingPage.swift */; };
 		EC9CD9B12A57D500007F46F1 /* AppNowPlayingDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CD9B02A57D500007F46F1 /* AppNowPlayingDetailPage.swift */; };
@@ -139,13 +150,24 @@
 		EC1658912A56953B008CEF62 /* AppNowPlayingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNowPlayingPage.swift; sourceTree = "<group>"; };
 		EC1658932A569952008CEF62 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		EC1658952A569B12008CEF62 /* AppDiscoverPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDiscoverPage.swift; sourceTree = "<group>"; };
-		EC1658972A569B33008CEF62 /* AppFanClubPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFanClubPage.swift; sourceTree = "<group>"; };
 		EC1658992A569B41008CEF62 /* AppMyListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMyListPage.swift; sourceTree = "<group>"; };
-		EC1974F02A592B2500371CC6 /* ReviesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviesPage.swift; sourceTree = "<group>"; };
+		EC1974F02A592B2500371CC6 /* ReviewsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsPage.swift; sourceTree = "<group>"; };
+		EC34BC3F2A5968DC0099572E /* AppUpComingDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUpComingDetailPage.swift; sourceTree = "<group>"; };
+		EC34BC432A5979F90099572E /* AppTrendingDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTrendingDetailPage.swift; sourceTree = "<group>"; };
+		EC34BC472A597BE70099572E /* AppTopRatePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTopRatePage.swift; sourceTree = "<group>"; };
+		EC34BC4A2A597C490099572E /* AppPopularDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPopularDetailPage.swift; sourceTree = "<group>"; };
+		EC34BC4E2A597DAD0099572E /* AppTopRateDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTopRateDetailPage.swift; sourceTree = "<group>"; };
+		EC34BC512A597F210099572E /* AppGenresDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGenresDetailPage.swift; sourceTree = "<group>"; };
+		EC34BC542A5984610099572E /* AppGenresListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGenresListPage.swift; sourceTree = "<group>"; };
+		EC34BC572A59AB210099572E /* AppFanClubPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFanClubPage.swift; sourceTree = "<group>"; };
+		EC34BC5A2A59AB3A0099572E /* AppFanClubDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFanClubDetailPage.swift; sourceTree = "<group>"; };
+		EC34BC5C2A59B5070099572E /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		EC5ADAE92A5955F100FBC43B /* CastPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastPage.swift; sourceTree = "<group>"; };
+		EC5ADAED2A59590C00FBC43B /* ReviewsDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsDetailPage.swift; sourceTree = "<group>"; };
+		EC5ADAF02A595A6600FBC43B /* CastDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastDetailPage.swift; sourceTree = "<group>"; };
 		EC9CD9A32A57CC67007F46F1 /* AppMoviePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMoviePage.swift; sourceTree = "<group>"; };
 		EC9CD9A52A57CEB7007F46F1 /* AppUpComingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUpComingPage.swift; sourceTree = "<group>"; };
 		EC9CD9A72A57CEC4007F46F1 /* AppPopularPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPopularPage.swift; sourceTree = "<group>"; };
-		EC9CD9A92A57CED0007F46F1 /* AppTopRatePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTopRatePage.swift; sourceTree = "<group>"; };
 		EC9CD9AB2A57CEE6007F46F1 /* AppGenresPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGenresPage.swift; sourceTree = "<group>"; };
 		EC9CD9AD2A57CFE1007F46F1 /* AppTrendingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTrendingPage.swift; sourceTree = "<group>"; };
 		EC9CD9B02A57D500007F46F1 /* AppNowPlayingDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNowPlayingDetailPage.swift; sourceTree = "<group>"; };
@@ -378,9 +400,121 @@
 			isa = PBXGroup;
 			children = (
 				EC9CD9B02A57D500007F46F1 /* AppNowPlayingDetailPage.swift */,
-				EC1974F02A592B2500371CC6 /* ReviesPage.swift */,
 			);
 			name = AppNowPlayingDetailPage;
+			sourceTree = "<group>";
+		};
+		EC34BC3D2A5968A30099572E /* AppUpComingPage */ = {
+			isa = PBXGroup;
+			children = (
+				EC9CD9A52A57CEB7007F46F1 /* AppUpComingPage.swift */,
+				EC34BC3E2A5968BA0099572E /* AppUpComingDetailPage */,
+			);
+			name = AppUpComingPage;
+			sourceTree = "<group>";
+		};
+		EC34BC3E2A5968BA0099572E /* AppUpComingDetailPage */ = {
+			isa = PBXGroup;
+			children = (
+				EC34BC3F2A5968DC0099572E /* AppUpComingDetailPage.swift */,
+			);
+			name = AppUpComingDetailPage;
+			sourceTree = "<group>";
+		};
+		EC34BC412A5978EA0099572E /* AppTrendingPage */ = {
+			isa = PBXGroup;
+			children = (
+				EC9CD9AD2A57CFE1007F46F1 /* AppTrendingPage.swift */,
+				EC34BC422A5979D70099572E /* AppTrendingDetailPage */,
+			);
+			name = AppTrendingPage;
+			sourceTree = "<group>";
+		};
+		EC34BC422A5979D70099572E /* AppTrendingDetailPage */ = {
+			isa = PBXGroup;
+			children = (
+				EC34BC432A5979F90099572E /* AppTrendingDetailPage.swift */,
+			);
+			name = AppTrendingDetailPage;
+			sourceTree = "<group>";
+		};
+		EC34BC452A597BAE0099572E /* AppPopularPage */ = {
+			isa = PBXGroup;
+			children = (
+				EC9CD9A72A57CEC4007F46F1 /* AppPopularPage.swift */,
+				EC34BC492A597C330099572E /* AppPopularDetailPage */,
+			);
+			name = AppPopularPage;
+			sourceTree = "<group>";
+		};
+		EC34BC492A597C330099572E /* AppPopularDetailPage */ = {
+			isa = PBXGroup;
+			children = (
+				EC34BC4A2A597C490099572E /* AppPopularDetailPage.swift */,
+			);
+			name = AppPopularDetailPage;
+			sourceTree = "<group>";
+		};
+		EC34BC4C2A597D890099572E /* AppTopRatePage */ = {
+			isa = PBXGroup;
+			children = (
+				EC34BC472A597BE70099572E /* AppTopRatePage.swift */,
+				EC34BC4D2A597D930099572E /* AppTopRateDetailPage */,
+			);
+			name = AppTopRatePage;
+			sourceTree = "<group>";
+		};
+		EC34BC4D2A597D930099572E /* AppTopRateDetailPage */ = {
+			isa = PBXGroup;
+			children = (
+				EC34BC4E2A597DAD0099572E /* AppTopRateDetailPage.swift */,
+			);
+			name = AppTopRateDetailPage;
+			sourceTree = "<group>";
+		};
+		EC34BC502A597EFE0099572E /* AppGenresPage */ = {
+			isa = PBXGroup;
+			children = (
+				EC9CD9AB2A57CEE6007F46F1 /* AppGenresPage.swift */,
+				EC34BC542A5984610099572E /* AppGenresListPage.swift */,
+				EC34BC532A597F280099572E /* AppGenresDetailPage */,
+			);
+			name = AppGenresPage;
+			sourceTree = "<group>";
+		};
+		EC34BC532A597F280099572E /* AppGenresDetailPage */ = {
+			isa = PBXGroup;
+			children = (
+				EC34BC512A597F210099572E /* AppGenresDetailPage.swift */,
+			);
+			name = AppGenresDetailPage;
+			sourceTree = "<group>";
+		};
+		EC34BC592A59AB250099572E /* AppFanClubDetailPage */ = {
+			isa = PBXGroup;
+			children = (
+				EC34BC5A2A59AB3A0099572E /* AppFanClubDetailPage.swift */,
+				EC34BC5C2A59B5070099572E /* Test.swift */,
+			);
+			name = AppFanClubDetailPage;
+			sourceTree = "<group>";
+		};
+		EC5ADAEC2A5958F900FBC43B /* ReviewsPage */ = {
+			isa = PBXGroup;
+			children = (
+				EC1974F02A592B2500371CC6 /* ReviewsPage.swift */,
+				EC5ADAED2A59590C00FBC43B /* ReviewsDetailPage.swift */,
+			);
+			name = ReviewsPage;
+			sourceTree = "<group>";
+		};
+		EC5ADAEF2A595A5A00FBC43B /* CastPage */ = {
+			isa = PBXGroup;
+			children = (
+				EC5ADAE92A5955F100FBC43B /* CastPage.swift */,
+				EC5ADAF02A595A6600FBC43B /* CastDetailPage.swift */,
+			);
+			name = CastPage;
 			sourceTree = "<group>";
 		};
 		EC9CD99E2A57C8F7007F46F1 /* HomePage */ = {
@@ -396,11 +530,11 @@
 			children = (
 				EC9CD9A32A57CC67007F46F1 /* AppMoviePage.swift */,
 				EC9CD9AF2A57D08B007F46F1 /* AppNowPlayingPage */,
-				EC9CD9A52A57CEB7007F46F1 /* AppUpComingPage.swift */,
-				EC9CD9AD2A57CFE1007F46F1 /* AppTrendingPage.swift */,
-				EC9CD9A72A57CEC4007F46F1 /* AppPopularPage.swift */,
-				EC9CD9A92A57CED0007F46F1 /* AppTopRatePage.swift */,
-				EC9CD9AB2A57CEE6007F46F1 /* AppGenresPage.swift */,
+				EC34BC3D2A5968A30099572E /* AppUpComingPage */,
+				EC34BC412A5978EA0099572E /* AppTrendingPage */,
+				EC34BC452A597BAE0099572E /* AppPopularPage */,
+				EC34BC4C2A597D890099572E /* AppTopRatePage */,
+				EC34BC502A597EFE0099572E /* AppGenresPage */,
 			);
 			name = AppMoviePage;
 			sourceTree = "<group>";
@@ -416,7 +550,8 @@
 		EC9CD9A12A57C92D007F46F1 /* AppFanClubPage */ = {
 			isa = PBXGroup;
 			children = (
-				EC1658972A569B33008CEF62 /* AppFanClubPage.swift */,
+				EC34BC572A59AB210099572E /* AppFanClubPage.swift */,
+				EC34BC592A59AB250099572E /* AppFanClubDetailPage */,
 			);
 			name = AppFanClubPage;
 			sourceTree = "<group>";
@@ -432,6 +567,8 @@
 		EC9CD9AF2A57D08B007F46F1 /* AppNowPlayingPage */ = {
 			isa = PBXGroup;
 			children = (
+				EC5ADAEF2A595A5A00FBC43B /* CastPage */,
+				EC5ADAEC2A5958F900FBC43B /* ReviewsPage */,
 				EC1658912A56953B008CEF62 /* AppNowPlayingPage.swift */,
 				EC1974EF2A592AFF00371CC6 /* AppNowPlayingDetailPage */,
 			);
@@ -653,22 +790,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC34BC442A5979F90099572E /* AppTrendingDetailPage.swift in Sources */,
+				EC34BC522A597F210099572E /* AppGenresDetailPage.swift in Sources */,
+				EC34BC482A597BE70099572E /* AppTopRatePage.swift in Sources */,
 				EC1658942A569952008CEF62 /* HomePage.swift in Sources */,
+				EC34BC402A5968DC0099572E /* AppUpComingDetailPage.swift in Sources */,
+				EC5ADAF12A595A6600FBC43B /* CastDetailPage.swift in Sources */,
+				EC34BC4B2A597C490099572E /* AppPopularDetailPage.swift in Sources */,
+				EC34BC5B2A59AB3A0099572E /* AppFanClubDetailPage.swift in Sources */,
 				EC1658962A569B12008CEF62 /* AppDiscoverPage.swift in Sources */,
+				EC5ADAEA2A5955F100FBC43B /* CastPage.swift in Sources */,
 				EC9CD9A82A57CEC4007F46F1 /* AppPopularPage.swift in Sources */,
 				EC1658812A569427008CEF62 /* AppDelegate.swift in Sources */,
 				EC1658832A569434008CEF62 /* DIContainer.swift in Sources */,
+				EC34BC4F2A597DAD0099572E /* AppTopRateDetailPage.swift in Sources */,
 				EC9CD9AE2A57CFE1007F46F1 /* AppTrendingPage.swift in Sources */,
-				EC1974F12A592B2500371CC6 /* ReviesPage.swift in Sources */,
+				EC1974F12A592B2500371CC6 /* ReviewsPage.swift in Sources */,
 				EC9CD9B12A57D500007F46F1 /* AppNowPlayingDetailPage.swift in Sources */,
+				EC34BC582A59AB210099572E /* AppFanClubPage.swift in Sources */,
+				EC5ADAEE2A59590C00FBC43B /* ReviewsDetailPage.swift in Sources */,
 				EC16587F2A56941F008CEF62 /* AppMain.swift in Sources */,
+				EC34BC5D2A59B5070099572E /* Test.swift in Sources */,
 				EC9CD9A42A57CC67007F46F1 /* AppMoviePage.swift in Sources */,
+				EC34BC552A5984610099572E /* AppGenresListPage.swift in Sources */,
 				EC9CD9AC2A57CEE6007F46F1 /* AppGenresPage.swift in Sources */,
 				EC1658922A56953B008CEF62 /* AppNowPlayingPage.swift in Sources */,
-				EC9CD9AA2A57CED0007F46F1 /* AppTopRatePage.swift in Sources */,
 				EC16589A2A569B41008CEF62 /* AppMyListPage.swift in Sources */,
 				EC9CD9A62A57CEB7007F46F1 /* AppUpComingPage.swift in Sources */,
-				EC1658982A569B33008CEF62 /* AppFanClubPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

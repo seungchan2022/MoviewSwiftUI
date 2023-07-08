@@ -7,7 +7,6 @@ struct AppMoviePage: View {
     TabView {
       AppNowPlayingPage()
         .navigationTitle("Now Playing")
-        .navigationBarTitleDisplayMode(.large)
         .tabItem {
         }
       
@@ -31,14 +30,15 @@ struct AppMoviePage: View {
         .tabItem {
         }
       
-      AppGenersPage()
+      AppGenersListPage()
         .navigationTitle("Geners")
         .tabItem {
         }
     }
     
     .tabViewStyle(PageTabViewStyle())
-        .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
+    .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
+    
   }
   
   var body: some View {

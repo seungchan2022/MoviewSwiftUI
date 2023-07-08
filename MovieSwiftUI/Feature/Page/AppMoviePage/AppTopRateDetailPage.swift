@@ -1,13 +1,13 @@
 import SwiftUI
 
-struct AppNowPlayingDetailPage {
+struct AppTopRateDetailPage {
   let post: Post
   
   @State private var wishListSelected = false
   @State private var seenListSelected = false
 }
 
-extension AppNowPlayingDetailPage: View {
+extension AppTopRateDetailPage: View {
   
   @ViewBuilder
   var content: some View {
@@ -109,7 +109,6 @@ extension AppNowPlayingDetailPage: View {
       .background(Color(.gray).opacity(0.2)
         .padding(.horizontal, -10)
       )
-      
       
       // 버튼
       HStack {
@@ -345,38 +344,7 @@ extension AppNowPlayingDetailPage: View {
       }
       
       Divider()
-      
-      //      // MARK: - Cast
-      //        VStack {
-      //          HStack {
-      //            NavigationLink {
-      //              CastPage()
-      //                .navigationTitle("Cast")
-      //                .navigationBarTitleDisplayMode(.large)
-      //                .foregroundColor(Color(.systemYellow))
-      //            } label: {
-      //              Text("Cast")
-      //                .font(.system(size: 18, weight: .bold))
-      //              Text("See all")
-      //                .font(.system(size: 18, weight: .medium))
-      //                .foregroundColor(Color(.systemMint).opacity(0.5))
-      //            }
-      //
-      //            Spacer()
-      //          }
-      //          .padding(.top, 10)
-      //          Image("image")
-      //            .resizable()
-      //            .aspectRatio(contentMode: .fill)
-      //            .frame(width: 80, height: 100)
-      //            .cornerRadius(5)
-      //
-      //          Text("Charlize Theron")
-      //            .font(.system(size: 18, weight: .bold))
-      //          Text("Cipher")
-      //            .font(.system(size: 14, weight: .light))
-      //            .foregroundColor(.gray)
-      //      }
+
     } // Vstack
     .padding(.horizontal, 10)
   }
@@ -399,4 +367,6 @@ extension AppNowPlayingDetailPage: View {
     }
   }
 }
+
+
 

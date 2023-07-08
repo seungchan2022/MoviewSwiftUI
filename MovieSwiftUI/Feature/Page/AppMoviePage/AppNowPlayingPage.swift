@@ -9,12 +9,6 @@ struct AppNowPlayingPage {
 
 extension AppNowPlayingPage: View {
   
-  //  var filter: (String) -> [String] {
-  //    { text in
-  //
-  //    }
-  //  }
-  
   @ViewBuilder
   var header: some View {
     
@@ -73,29 +67,6 @@ extension AppNowPlayingPage: View {
         header
         content
       }
-      
-      .toolbar {
-        ToolbarItem(placement: .navigationBarTrailing) {
-          Button {
-            print("DEBUG: Did tap button..")
-          } label: {
-            Image(systemName: "wrench.adjustable")
-              .imageScale(.large)
-          }
-        }
-      }
-      
-      .toolbar {
-        ToolbarItem(placement: .navigationBarTrailing) {
-          Button {
-            print("DEBUG: Did tap button..")
-          } label: {
-            Image(systemName: "rectangle.3.group.fill")
-              .imageScale(.large)
-          }
-        }
-      
-    }
   }
 }
 
@@ -116,22 +87,22 @@ extension Information: View {
       
       VStack(alignment: .leading, spacing: 8) {
         Text(post.title)
-          .font(.title3)
+          .font(.system(size: 20, weight: .bold))
           .foregroundColor(.yellow)
         
         Spacer()
         
         HStack {
           Text(post.averageUserRating)
-            .font(.footnote)
+            .font(.system(size: 14, weight: .light))
           Text(post.releaseDate)
-            .font(.subheadline)
+            .font(.system(size: 16, weight: .light))
         }
         
         Spacer()
         
         Text(post.description)
-          .font(.title2)
+          .font(.system(size: 18, weight: .light))
           .foregroundColor(.gray)
       }
     }
@@ -176,19 +147,3 @@ extension Post {
     ),
   ]
 }
-
-//
-//import SwiftUI
-//import ExpandableText
-//
-//struct ExpandableText_Test: View {
-//
-//    var body: some View {
-//        ExpandableText(text: "Do you think you're living an ordinary life? You are so mistaken it's difficult to even explain. The mere fact that you exist makes you extraordinary. The odds of you existing are less than winning the lottery, but here you are. Are you going to let this extraordinary opportunity pass?")
-//            .font(.body)//optional
-//            .foregroundColor(.primary)//optional
-//            .lineLimit(3)//optional
-//            .animation(.easeOut)//optional
-//            .padding(.horizontal, 24)//optional
-//    }
-//}
