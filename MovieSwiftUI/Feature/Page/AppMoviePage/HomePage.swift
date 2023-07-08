@@ -1,3 +1,66 @@
+//import SwiftUI
+//
+//struct HomePage {
+//  @State private var selection = 0
+//}
+//
+//extension HomePage: View {
+//
+//  @ViewBuilder
+//  var content: some View {
+//    TabView() {
+//      AppMoviePage()
+//        .tabItem {
+//          VStack {
+//            Image(systemName: "film")
+//              .renderingMode(.template)
+//            Text("Movies")
+//          }
+//        }
+//        .navigationTitle("seardfd")
+//        .tag(0)
+//
+//      AppDiscoverPage()
+//        .tabItem {
+//          VStack {
+//            Image(systemName: "square.stack")
+//              .renderingMode(.template)
+//            Text("Discover")
+//          }
+//        }
+//        .tag(1)
+//
+//      AppFanClubPage()
+//        .tabItem {
+//          VStack {
+//            Image(systemName: "star.circle.fill")
+//              .renderingMode(.template)
+//            Text("Fan Club")
+//          }
+//        }
+//        .tag(2)
+//
+//      AppMyListPage()
+//        .tabItem {
+//          VStack {
+//            Image(systemName: "heart.circle")
+//              .renderingMode(.template)
+//            Text("My Lists")
+//          }
+//        }
+//        .tag(3)
+//    }
+//    .accentColor(.yellow)
+//    .onAppear {
+//      selection = 0
+//    }
+//  }
+//
+//  var body: some View {
+//      content
+//  }
+//}
+
 import SwiftUI
 
 struct HomePage {
@@ -5,55 +68,68 @@ struct HomePage {
 }
 
 extension HomePage: View {
-  
   @ViewBuilder
   var content: some View {
     TabView(selection: $selection) {
-      AppMoviePage()
-        .tabItem {
-          VStack {
-            Image(systemName: "film")
-              .renderingMode(.template)
-            Text("Movies")
-          }
+      NavigationView {
+        AppMoviePage()
+//          .navigationBarTitleDisplayMode(.inline)
+      }
+      .tabItem {
+        VStack {
+          Image(systemName: "film")
+            .renderingMode(.template)
+          Text("Movies")
         }
-        .navigationTitle("seardfd")
-        .tag(0)
+      }
+      .tag(0)
       
-      AppDiscoverPage()
-        .tabItem {
-          VStack {
-            Image(systemName: "square.stack")
-              .renderingMode(.template)
-            Text("Discover")
-          }
+      NavigationView {
+        AppDiscoverPage()
+          .navigationTitle("Discover")
+      }
+      .tabItem {
+        VStack {
+          Image(systemName: "square.stack")
+            .renderingMode(.template)
+          Text("Discover")
         }
-        .tag(1)
+      }
+      .tag(1)
       
-      AppFanClubPage()
-        .tabItem {
-          VStack {
-            Image(systemName: "star.circle.fill")
-              .renderingMode(.template)
-            Text("Fan Club")
-          }
+      NavigationView {
+        AppFanClubPage()
+          .navigationTitle("Fan Club")
+      }
+      .tabItem {
+        VStack {
+          Image(systemName: "star.circle.fill")
+            .renderingMode(.template)
+          Text("Fan Club")
         }
-        .tag(2)
+      }
+      .tag(2)
       
-      AppMyListPage()
-        .tabItem {
-          VStack {
-            Image(systemName: "heart.circle")
-              .renderingMode(.template)
-            Text("My Lists")
-          }
+      NavigationView {
+        AppMyListPage()
+          .navigationTitle("My Lists")
+      }
+      .tabItem {
+        VStack {
+          Image(systemName: "heart.circle")
+            .renderingMode(.template)
+          Text("My Lists")
         }
-        .tag(3)
+      }
+      .tag(3)
     }
     .accentColor(.yellow)
   }
   
-  var body: some View {    
-      content
+  
+  var body: some View {
+    content
   }
+  
+  
 }

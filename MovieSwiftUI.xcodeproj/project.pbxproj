@@ -31,6 +31,7 @@
 		EC1658962A569B12008CEF62 /* AppDiscoverPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1658952A569B12008CEF62 /* AppDiscoverPage.swift */; };
 		EC1658982A569B33008CEF62 /* AppFanClubPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1658972A569B33008CEF62 /* AppFanClubPage.swift */; };
 		EC16589A2A569B41008CEF62 /* AppMyListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1658992A569B41008CEF62 /* AppMyListPage.swift */; };
+		EC1974F12A592B2500371CC6 /* ReviesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1974F02A592B2500371CC6 /* ReviesPage.swift */; };
 		EC9CD9A42A57CC67007F46F1 /* AppMoviePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CD9A32A57CC67007F46F1 /* AppMoviePage.swift */; };
 		EC9CD9A62A57CEB7007F46F1 /* AppUpComingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CD9A52A57CEB7007F46F1 /* AppUpComingPage.swift */; };
 		EC9CD9A82A57CEC4007F46F1 /* AppPopularPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CD9A72A57CEC4007F46F1 /* AppPopularPage.swift */; };
@@ -38,7 +39,6 @@
 		EC9CD9AC2A57CEE6007F46F1 /* AppGenresPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CD9AB2A57CEE6007F46F1 /* AppGenresPage.swift */; };
 		EC9CD9AE2A57CFE1007F46F1 /* AppTrendingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CD9AD2A57CFE1007F46F1 /* AppTrendingPage.swift */; };
 		EC9CD9B12A57D500007F46F1 /* AppNowPlayingDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CD9B02A57D500007F46F1 /* AppNowPlayingDetailPage.swift */; };
-		EC9CD9B32A57E55C007F46F1 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CD9B22A57E55C007F46F1 /* test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +141,7 @@
 		EC1658952A569B12008CEF62 /* AppDiscoverPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDiscoverPage.swift; sourceTree = "<group>"; };
 		EC1658972A569B33008CEF62 /* AppFanClubPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFanClubPage.swift; sourceTree = "<group>"; };
 		EC1658992A569B41008CEF62 /* AppMyListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMyListPage.swift; sourceTree = "<group>"; };
+		EC1974F02A592B2500371CC6 /* ReviesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviesPage.swift; sourceTree = "<group>"; };
 		EC9CD9A32A57CC67007F46F1 /* AppMoviePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMoviePage.swift; sourceTree = "<group>"; };
 		EC9CD9A52A57CEB7007F46F1 /* AppUpComingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUpComingPage.swift; sourceTree = "<group>"; };
 		EC9CD9A72A57CEC4007F46F1 /* AppPopularPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPopularPage.swift; sourceTree = "<group>"; };
@@ -148,7 +149,6 @@
 		EC9CD9AB2A57CEE6007F46F1 /* AppGenresPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGenresPage.swift; sourceTree = "<group>"; };
 		EC9CD9AD2A57CFE1007F46F1 /* AppTrendingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTrendingPage.swift; sourceTree = "<group>"; };
 		EC9CD9B02A57D500007F46F1 /* AppNowPlayingDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNowPlayingDetailPage.swift; sourceTree = "<group>"; };
-		EC9CD9B22A57E55C007F46F1 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -374,6 +374,15 @@
 			path = UseCase;
 			sourceTree = "<group>";
 		};
+		EC1974EF2A592AFF00371CC6 /* AppNowPlayingDetailPage */ = {
+			isa = PBXGroup;
+			children = (
+				EC9CD9B02A57D500007F46F1 /* AppNowPlayingDetailPage.swift */,
+				EC1974F02A592B2500371CC6 /* ReviesPage.swift */,
+			);
+			name = AppNowPlayingDetailPage;
+			sourceTree = "<group>";
+		};
 		EC9CD99E2A57C8F7007F46F1 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
@@ -424,8 +433,7 @@
 			isa = PBXGroup;
 			children = (
 				EC1658912A56953B008CEF62 /* AppNowPlayingPage.swift */,
-				EC9CD9B02A57D500007F46F1 /* AppNowPlayingDetailPage.swift */,
-				EC9CD9B22A57E55C007F46F1 /* test.swift */,
+				EC1974EF2A592AFF00371CC6 /* AppNowPlayingDetailPage */,
 			);
 			name = AppNowPlayingPage;
 			sourceTree = "<group>";
@@ -650,8 +658,8 @@
 				EC9CD9A82A57CEC4007F46F1 /* AppPopularPage.swift in Sources */,
 				EC1658812A569427008CEF62 /* AppDelegate.swift in Sources */,
 				EC1658832A569434008CEF62 /* DIContainer.swift in Sources */,
-				EC9CD9B32A57E55C007F46F1 /* test.swift in Sources */,
 				EC9CD9AE2A57CFE1007F46F1 /* AppTrendingPage.swift in Sources */,
+				EC1974F12A592B2500371CC6 /* ReviesPage.swift in Sources */,
 				EC9CD9B12A57D500007F46F1 /* AppNowPlayingDetailPage.swift in Sources */,
 				EC16587F2A56941F008CEF62 /* AppMain.swift in Sources */,
 				EC9CD9A42A57CC67007F46F1 /* AppMoviePage.swift in Sources */,

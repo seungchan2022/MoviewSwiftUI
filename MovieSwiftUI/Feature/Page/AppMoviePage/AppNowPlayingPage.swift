@@ -4,6 +4,7 @@ struct AppNowPlayingPage {
   
   @FocusState private var isFocused
   @State private var keyword = ""
+  
 }
 
 extension AppNowPlayingPage: View {
@@ -16,46 +17,49 @@ extension AppNowPlayingPage: View {
   
   @ViewBuilder
   var header: some View {
-    VStack {
-      HStack(spacing: 15) {
-        Image(systemName: "magnifyingglass")
-          .renderingMode(.template)
-          .resizable()
-          .aspectRatio(contentMode: .fit)
-          .frame(width: 20, height: 20)
-        
-        TextField("Search any movie or person", text: $keyword)
-          .textFieldStyle(.plain)
-          .frame(height: 40)
-          .padding(.horizontal)
-          .background(
-            RoundedRectangle(cornerRadius: 5)
-              .stroke(.gray.opacity(0.7), lineWidth: 1))
-        
-          .focused($isFocused, equals: true)
-        if !keyword.isEmpty {
-          Button(action: { keyword = "" }) {
-            Text("Cancel")
-              .foregroundColor(.red)
+    
+      VStack {
+        HStack(spacing: 15) {
+          Image(systemName: "magnifyingglass")
+            .renderingMode(.template)
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .frame(width: 20, height: 20)
+          
+          TextField("Search any movie or person", text: $keyword)
+            .textFieldStyle(.plain)
+            .frame(height: 40)
+            .padding(.horizontal)
+            .background(
+              RoundedRectangle(cornerRadius: 5)
+                .stroke(.gray.opacity(0.7), lineWidth: 1))
+          
+            .focused($isFocused, equals: true)
+          if !keyword.isEmpty {
+            Button(action: { keyword = "" }) {
+              Text("Cancel")
+                .foregroundColor(.red)
+            }
           }
         }
+        .padding(.horizontal, 8)
       }
-      .padding(.horizontal, 8)
+      .padding(.horizontal)
     }
-    .padding(.horizontal)
-  }
+  
   
   @ViewBuilder
   var content: some View {
-    
     List {
-      ForEach(0...5, id: \.self) { _ in
+      ForEach(Post.MOCK_POSTS, id: \.self) { post in
         NavigationLink {
-          test()
+          AppNowPlayingDetailPage(post: post)
+            .navigationTitle(post.title)
         } label: {
-          Information()
+          Information(post: post)
             .frame(maxHeight: 200)
         }
+
       }
       .listRowSeparator(.hidden)
       .listRowInsets(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
@@ -65,20 +69,38 @@ extension AppNowPlayingPage: View {
   }
   
   var body: some View {
-    
-//    NavigationView {
         VStack {
-          header
-          content
+        header
+        content
+      }
+      
+      .toolbar {
+        ToolbarItem(placement: .navigationBarTrailing) {
+          Button {
+            print("DEBUG: Did tap button..")
+          } label: {
+            Image(systemName: "wrench.adjustable")
+              .imageScale(.large)
+          }
+        }
+      }
+      
+      .toolbar {
+        ToolbarItem(placement: .navigationBarTrailing) {
+          Button {
+            print("DEBUG: Did tap button..")
+          } label: {
+            Image(systemName: "rectangle.3.group.fill")
+              .imageScale(.large)
+          }
         }
       
-      .navigationTitle("Now Playing")
-      .navigationBarTitleDisplayMode(.inline)
-//    }
+    }
   }
 }
 
 struct Information {
+  let post: Post
 }
 
 extension Information: View {
@@ -86,29 +108,29 @@ extension Information: View {
   @ViewBuilder
   var content: some View {
     HStack(spacing: .zero) {
-      Image("image")
+      Image(post.thumbnail)
         .resizable()
         .aspectRatio(contentMode: .fit)
         .clipShape(RoundedRectangle(cornerRadius: 10))
         .frame(width: 200, height: 200)
       
       VStack(alignment: .leading, spacing: 8) {
-        Text("Fast X")
+        Text(post.title)
           .font(.title3)
           .foregroundColor(.yellow)
         
         Spacer()
         
         HStack {
-          Text("73%")
+          Text(post.averageUserRating)
             .font(.footnote)
-          Text("May 17, 2023")
+          Text(post.releaseDate)
             .font(.subheadline)
         }
         
         Spacer()
         
-        Text("Over many missions and against impossible odds, Dom Toretto and his family have outsmarted, out-nerved and outdriven every foe in their path.")
+        Text(post.description)
           .font(.title2)
           .foregroundColor(.gray)
       }
@@ -120,3 +142,53 @@ extension Information: View {
   }
 }
 
+struct Post: Hashable {
+  let thumbnail: String
+  let title: String
+  let averageUserRating: String
+  let releaseDate: String
+  let description: String
+  
+}
+
+extension Post {
+  static var MOCK_POSTS: [Post] = [
+    .init(
+      thumbnail: "image",
+      title: "Fast X",
+      averageUserRating: "73%",
+      releaseDate: "May 17, 2023",
+      description: "Over many missions and against impossible odds, Dom Toretto and his family have outsmarted, out-nerved and outdriven every foe in their path."
+    ),
+    .init(
+      thumbnail: "image",
+      title: "Fast X",
+      averageUserRating: "73%",
+      releaseDate: "May 17, 2023",
+      description: "Over many missions and against impossible odds, Dom Toretto and his family have outsmarted, out-nerved and outdriven every foe in their path."
+    ),
+    .init(
+      thumbnail: "image",
+      title: "Fast X",
+      averageUserRating: "73%",
+      releaseDate: "May 17, 2023",
+      description: "Over many missions and against impossible odds, Dom Toretto and his family have outsmarted, out-nerved and outdriven every foe in their path."
+    ),
+  ]
+}
+
+//
+//import SwiftUI
+//import ExpandableText
+//
+//struct ExpandableText_Test: View {
+//
+//    var body: some View {
+//        ExpandableText(text: "Do you think you're living an ordinary life? You are so mistaken it's difficult to even explain. The mere fact that you exist makes you extraordinary. The odds of you existing are less than winning the lottery, but here you are. Are you going to let this extraordinary opportunity pass?")
+//            .font(.body)//optional
+//            .foregroundColor(.primary)//optional
+//            .lineLimit(3)//optional
+//            .animation(.easeOut)//optional
+//            .padding(.horizontal, 24)//optional
+//    }
+//}
