@@ -64,6 +64,7 @@ struct AppFanClubPage: View {
   
   var body: some View {
       contetnt
+      
   }
 }
 

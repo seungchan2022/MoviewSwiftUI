@@ -40,7 +40,6 @@
 		EC34BC552A5984610099572E /* AppGenresListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC34BC542A5984610099572E /* AppGenresListPage.swift */; };
 		EC34BC582A59AB210099572E /* AppFanClubPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC34BC572A59AB210099572E /* AppFanClubPage.swift */; };
 		EC34BC5B2A59AB3A0099572E /* AppFanClubDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC34BC5A2A59AB3A0099572E /* AppFanClubDetailPage.swift */; };
-		EC34BC5D2A59B5070099572E /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC34BC5C2A59B5070099572E /* Test.swift */; };
 		EC5ADAEA2A5955F100FBC43B /* CastPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5ADAE92A5955F100FBC43B /* CastPage.swift */; };
 		EC5ADAEE2A59590C00FBC43B /* ReviewsDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5ADAED2A59590C00FBC43B /* ReviewsDetailPage.swift */; };
 		EC5ADAF12A595A6600FBC43B /* CastDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5ADAF02A595A6600FBC43B /* CastDetailPage.swift */; };
@@ -50,6 +49,9 @@
 		EC9CD9AC2A57CEE6007F46F1 /* AppGenresPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CD9AB2A57CEE6007F46F1 /* AppGenresPage.swift */; };
 		EC9CD9AE2A57CFE1007F46F1 /* AppTrendingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CD9AD2A57CFE1007F46F1 /* AppTrendingPage.swift */; };
 		EC9CD9B12A57D500007F46F1 /* AppNowPlayingDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CD9B02A57D500007F46F1 /* AppNowPlayingDetailPage.swift */; };
+		ECD29B4A2A5A650A007D30D9 /* CustomListsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD29B492A5A650A007D30D9 /* CustomListsPage.swift */; };
+		ECD29B4C2A5A7D64007D30D9 /* WishListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD29B4B2A5A7D64007D30D9 /* WishListPage.swift */; };
+		ECD29B4E2A5A7D6F007D30D9 /* SeenListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD29B4D2A5A7D6F007D30D9 /* SeenListPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -161,7 +163,6 @@
 		EC34BC542A5984610099572E /* AppGenresListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGenresListPage.swift; sourceTree = "<group>"; };
 		EC34BC572A59AB210099572E /* AppFanClubPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFanClubPage.swift; sourceTree = "<group>"; };
 		EC34BC5A2A59AB3A0099572E /* AppFanClubDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFanClubDetailPage.swift; sourceTree = "<group>"; };
-		EC34BC5C2A59B5070099572E /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		EC5ADAE92A5955F100FBC43B /* CastPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastPage.swift; sourceTree = "<group>"; };
 		EC5ADAED2A59590C00FBC43B /* ReviewsDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsDetailPage.swift; sourceTree = "<group>"; };
 		EC5ADAF02A595A6600FBC43B /* CastDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastDetailPage.swift; sourceTree = "<group>"; };
@@ -171,6 +172,9 @@
 		EC9CD9AB2A57CEE6007F46F1 /* AppGenresPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGenresPage.swift; sourceTree = "<group>"; };
 		EC9CD9AD2A57CFE1007F46F1 /* AppTrendingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTrendingPage.swift; sourceTree = "<group>"; };
 		EC9CD9B02A57D500007F46F1 /* AppNowPlayingDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNowPlayingDetailPage.swift; sourceTree = "<group>"; };
+		ECD29B492A5A650A007D30D9 /* CustomListsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomListsPage.swift; sourceTree = "<group>"; };
+		ECD29B4B2A5A7D64007D30D9 /* WishListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListPage.swift; sourceTree = "<group>"; };
+		ECD29B4D2A5A7D6F007D30D9 /* SeenListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeenListPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -494,7 +498,6 @@
 			isa = PBXGroup;
 			children = (
 				EC34BC5A2A59AB3A0099572E /* AppFanClubDetailPage.swift */,
-				EC34BC5C2A59B5070099572E /* Test.swift */,
 			);
 			name = AppFanClubDetailPage;
 			sourceTree = "<group>";
@@ -560,6 +563,9 @@
 			isa = PBXGroup;
 			children = (
 				EC1658992A569B41008CEF62 /* AppMyListPage.swift */,
+				ECD29B492A5A650A007D30D9 /* CustomListsPage.swift */,
+				ECD29B4B2A5A7D64007D30D9 /* WishListPage.swift */,
+				ECD29B4D2A5A7D6F007D30D9 /* SeenListPage.swift */,
 			);
 			name = AppMyListPage;
 			sourceTree = "<group>";
@@ -803,14 +809,16 @@
 				EC9CD9A82A57CEC4007F46F1 /* AppPopularPage.swift in Sources */,
 				EC1658812A569427008CEF62 /* AppDelegate.swift in Sources */,
 				EC1658832A569434008CEF62 /* DIContainer.swift in Sources */,
+				ECD29B4C2A5A7D64007D30D9 /* WishListPage.swift in Sources */,
 				EC34BC4F2A597DAD0099572E /* AppTopRateDetailPage.swift in Sources */,
 				EC9CD9AE2A57CFE1007F46F1 /* AppTrendingPage.swift in Sources */,
 				EC1974F12A592B2500371CC6 /* ReviewsPage.swift in Sources */,
 				EC9CD9B12A57D500007F46F1 /* AppNowPlayingDetailPage.swift in Sources */,
+				ECD29B4A2A5A650A007D30D9 /* CustomListsPage.swift in Sources */,
 				EC34BC582A59AB210099572E /* AppFanClubPage.swift in Sources */,
 				EC5ADAEE2A59590C00FBC43B /* ReviewsDetailPage.swift in Sources */,
 				EC16587F2A56941F008CEF62 /* AppMain.swift in Sources */,
-				EC34BC5D2A59B5070099572E /* Test.swift in Sources */,
+				ECD29B4E2A5A7D6F007D30D9 /* SeenListPage.swift in Sources */,
 				EC9CD9A42A57CC67007F46F1 /* AppMoviePage.swift in Sources */,
 				EC34BC552A5984610099572E /* AppGenresListPage.swift in Sources */,
 				EC9CD9AC2A57CEE6007F46F1 /* AppGenresPage.swift in Sources */,

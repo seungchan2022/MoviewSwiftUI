@@ -1,14 +1,14 @@
 import SwiftUI
 
 struct AppFanClubDetailPage {
-  
+  @State private var clickFanButton = false
 }
 
 extension AppFanClubDetailPage: View {
   
   @ViewBuilder
   var header: some View {
-    VStack(alignment: .leading, spacing: 5) {
+    VStack(alignment: .leading, spacing: 8) {
       HStack(spacing: 10) {
         Image("image")
           .resizable()
@@ -51,8 +51,17 @@ extension AppFanClubDetailPage: View {
         .font(.system(size: 18, weight: .medium))
       
       Text("Manila, Philppines")
-        .font(.system(size: 1, weight: .medium))
+        .font(.system(size: 16, weight: .medium))
         .foregroundColor(.gray)
+      
+      // MARK: - Fan level
+      if clickFanButton {
+        Text("Fan level")
+          .font(.system(size: 18, weight: .medium))
+        Text("0%")
+          .font(.system(size: 14, weight: .light))
+          .padding(.leading, 20)
+      }
       
       // MARK: - Images
       Group {
@@ -74,13 +83,13 @@ extension AppFanClubDetailPage: View {
           Spacer()
         }
       }
-      .padding(.top, 10)
+      .padding(.top, 20)
     }
   }
   
   @ViewBuilder
   var content: some View {
-    VStack {
+      VStack {
         Text("2023")
           .font(.system(size: 18, weight: .bold))
           .padding(.horizontal, 10)
@@ -104,15 +113,12 @@ extension AppFanClubDetailPage: View {
             
             Text("Sugal Ng Puso")
               .font(.system(size: 18, weight: .bold))
+              .foregroundColor(Color(.label))
             
             Spacer()
           }
         }
-
-        
       }
-      
-      
     }
   }
   
@@ -124,5 +130,20 @@ extension AppFanClubDetailPage: View {
     .padding(.horizontal, 10)
     .navigationTitle("AJ Raval")
     .navigationBarTitleDisplayMode(.large)
+    .toolbar {
+      ToolbarItem(placement: .navigationBarTrailing) {
+        Button {
+          clickFanButton.toggle()
+        } label: {
+          Image(systemName: "star.circle")
+            .renderingMode(.template)
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .frame(width: 25, height: 25)
+            .foregroundColor(clickFanButton ? .yellow : .white)
+        }
+      }
+    }
+
   }
 }

@@ -1,13 +1,13 @@
 import SwiftUI
 
-struct Test {
+struct WishListPage {
   let post: Post
   
   @State private var wishListSelected = false
   @State private var seenListSelected = false
 }
 
-extension Test: View {
+extension WishListPage: View {
   
   @ViewBuilder
   var content: some View {
@@ -199,26 +199,7 @@ extension Test: View {
       
       
       Divider()
-      
-      // MARK: - Reviews
-      HStack {
-        NavigationLink {
-          ReviewsPage()
-            .navigationTitle("Reviews")
-            .navigationBarTitleDisplayMode(.large)
-          
-        } label: {
-          Text("7 reviews")
-            .font(.system(size: 18, weight: .medium))
-            .foregroundColor(Color(.systemMint).opacity(0.5))
-        }
-        
-        Spacer()
-      }
-      .padding(.top, 10)
-      
-      Divider()
-      
+            
       // MARK: - Overview
       HStack {
         Text("Overview:")
@@ -344,7 +325,7 @@ extension Test: View {
       }
       
       Divider()
-
+      
     } // Vstack
     .padding(.horizontal, 10)
   }
@@ -367,6 +348,5 @@ extension Test: View {
     }
   }
 }
-
 
 
